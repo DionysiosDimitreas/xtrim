@@ -1,4 +1,5 @@
-XTrim: Readtrimmer for fastq files\
+**XTrim: Readtrimmer for fastq files**\
+\
 Introduction\
 XTrim is a Python-based tool designed for trimming fastq files. It provides functionality to trim and evaluate reads based on various criteria such as quality scores, length and ambiguous base content.\
 \
