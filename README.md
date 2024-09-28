@@ -62,5 +62,9 @@ python xtrim.py -i <inputfile> -o <outputfile> -lg <logfile> -tt <Q/N> \
 - `--minlen` / `-l`: Minimum length of read after trimming.
 - `--minqual` / `-q`: Minimum mean quality of read after trimming.
 
-
 ## Example Usage
+
+To trim a FASTQ file based on ambiguous bases (`N`) with specified thresholds and quality settings, use the following command:
+
+```bash
+python xtrim.py -i input.fastq -o output.fastq -lg logfile.log -tt N -t3 6 -t5 8 -l 50 -q 32 -N 7
