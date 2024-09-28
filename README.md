@@ -59,3 +59,21 @@ pip install -r requirements.txt
 \
 Example Usage:\
 python xtrim.py −i input.fastq −o output.fastq −lg logfile.log −tt N −t3 6 −t5 8−l 50−q 32−N 7
+```
+## Usage
+
+XTrim is run via the command line and accepts various arguments for trimming sequencing reads. You can use either a long or short form for the arguments.
+
+Long format
+```bash
+python xtrim.py --input <inputfile> --output <outputfile> --logfile <logfile> --trimtype <Q/N> \
+[--phred <33/64>] [--thres3 <3’end threshold>] [--thres5 <5’end threshold>] \
+[--movwin <moving window size>] [--minlen <min length>] [--minqual <min quality>] [--maxN <max N content>]
+```
+
+Short format
+```bash
+python xtrim.py -i <inputfile> -o <outputfile> -lg <logfile> -tt <Q/N> \
+[-p <33/64>] [-t3 <3’end threshold>] [-t5 <5’end threshold>] \
+[-w <moving window size>] [-l <min length>] [-q <min quality>] [-N <max N content>]
+```
