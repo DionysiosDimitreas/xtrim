@@ -78,4 +78,3 @@ We welcome contributions to XTrim! If you'd like to contribute, please follow th
 2. **Clone your fork**: Use the following command to clone your fork to your local machine:
    ```bash
    git clone https://github.com/DionysiosDimitreas/XTrim.git
-```
