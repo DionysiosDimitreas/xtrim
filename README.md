@@ -27,6 +27,34 @@ length or quality Optional arguments:\
 −−movwin/−w: Size of moving window for quality trimming\
 −−minlen/−l: Minimum length of read after trimming\
 −−minqual/−q: Minimum mean quality of read after trimming\
+
+# XTrim: Readtrimmer for FASTQ Files
+
+**XTrim** is a Python-based tool designed for trimming FASTQ files. It trims sequencing reads based on quality scores, read length, and ambiguous base content.
+
+## Table of Contents
+- [Introduction](#introduction)
+- [Installation](#installation)
+- [Usage](#usage)
+  - [Mandatory Arguments](#mandatory-arguments)
+  - [Optional Arguments](#optional-arguments)
+- [Example Usage](#example-usage)
+- [Contributing](#contributing)
+
+## Introduction
+XTrim is a flexible tool that helps in preprocessing FASTQ files by trimming and evaluating sequencing reads based on:
+- Quality scores (Phred)
+- Read length
+- Ambiguous base content (`N` bases)
+
+The tool ensures cleaner, more reliable datasets for downstream analysis.
+
+## Installation
+XTrim requires **Python 3**. Install the required dependencies using the following command:
+
+```bash
+pip install -r requirements.txt
+
 −−maxN/−N: Maximum number of unknown bases in sequence after trimming\
 \
 Example Usage:\
