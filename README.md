@@ -77,4 +77,4 @@ We welcome contributions to XTrim! If you'd like to contribute, please follow th
 1. **Fork the repository**: Create your own copy of the repository by clicking the "Fork" button at the top right of the page.
 2. **Clone your fork**: Use the following command to clone your fork to your local machine:
    ```bash
-   git clone https://github.com/DionysiosDimitreas/XTrim.git
+   git clone https://github.com/DionysiosDimitreas/xtrim.git
