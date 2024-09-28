@@ -47,15 +47,20 @@ python xtrim.py -i <inputfile> -o <outputfile> -lg <logfile> -tt <Q/N> \
 [-p <33/64>] [-t3 <3’end threshold>] [-t5 <5’end threshold>] \
 [-w <moving window size>] [-l <min length>] [-q <min quality>] [-N <max N content>]
 ```
-Mandatory arguments:\
-−−input/−i: input file, gz or txtfile (same format as output)\
-−−output/−o: output file , gz or txtfile (same format as input)\
-−−logfile/−lg: log file\
-−−trimtype/−tt: Q or N, trimming type, defining whether to trim based on
-length or quality Optional arguments:\
-−−phred/−p : 33 or 64, phred encoding\
-−−thres3/−t3: Threshold 3’−end\
-−−thres5/−t5: Threshold 5’−end\
-−−movwin/−w: Size of moving window for quality trimming\
-−−minlen/−l: Minimum length of read after trimming\
-−−minqual/−q: Minimum mean quality of read after trimming\
+
+### Mandatory Arguments:
+- `--input` / `-i`: Input file, gz or txt file (same format as output).
+- `--output` / `-o`: Output file, gz or txt file (same format as input).
+- `--logfile` / `-lg`: Log file.
+- `--trimtype` / `-tt`: Trimming type, either `Q` for quality-based trimming or `N` for length-based trimming.
+
+### Optional Arguments:
+- `--phred` / `-p`: Phred encoding, either `33` or `64`.
+- `--thres3` / `-t3`: Threshold for the 3’ end.
+- `--thres5` / `-t5`: Threshold for the 5’ end.
+- `--movwin` / `-w`: Size of the moving window for quality trimming.
+- `--minlen` / `-l`: Minimum length of read after trimming.
+- `--minqual` / `-q`: Minimum mean quality of read after trimming.
+
+
+## Example Usage
